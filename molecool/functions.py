@@ -37,6 +37,29 @@ atomic_weights = {
 
 
 def calculate_distance(rA, rB):
+    """
+    Calculate the distance between two points.
+
+    Optional extended summary.
+
+    Parameters
+    ----------
+    rA : np.ndarray
+        The coordinates of each point.
+    rB
+
+    Returns
+    -------
+    dist : float
+        The distance between the two points.
+
+    Examples
+    --------
+    >>> r1 = np.array([0, 0, 0])
+    >>> r2 = np.array([0, 0.1, 0])
+    >>> calculate_distance(r1, r2)
+    0.1
+    """
     # This function calculates the distance between two points given as numpy arrays.
     d = (rA - rB)
     dist = np.linalg.norm(d)
